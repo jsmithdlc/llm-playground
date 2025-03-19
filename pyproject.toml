@@ -1,3 +1,20 @@
+[project]
+name = "llm-playground"
+version = "0.1.0"
+description = "For testing out LLM tools"
+authors = [
+    {name = "Javier Smith"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
 [tool.pytest.ini_options]
 minversion = "6.0"
 addopts = "-ra -q"
@@ -12,3 +29,8 @@ filterwarnings = [
 testpaths = [
     "tests",
 ]
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.2.0"
+pytest = "^8.3.5"
+
